@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japan</title>
+    <style>
+      body {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: #7c99ac;
+        text-align: center;
+        background-image: linear-gradient(#d3dedc, #ffefef);
+      }
+      h1 {
+        text-transform: uppercase;
+        font-weight: 800;
+      }
+      h2 {
+        font-size: 1.25em;
+      }
+
+      img {
+        max-width: 80%;
+        display: block;
+        margin: 0 auto;
+      }
+      hr {
+        max-width: 80%;
+      }
+      p {
+        display: block;
+        margin: 0 auto;
+        line-height: 2;
+        text-align: left;
+        max-width: 80%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .Japan {
+        color: #92a9bd;
+      }
+      a {
+        text-decoration: none;
+        color: #92a9bd;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+
+      a:hover {
+        color: #d3dedc;
+      }
+
+      .learnMore {
+        display: block;
+        margin: 0 auto;
+        padding-top: 5px;
+        padding-top: 5px;
+        max-width: 80%;
+        text-align: left;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        background-color: #7c99ac;
+        color: #ffefef;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        box-shadow: 5px 5px 5px #d3dedc;
+        text-transform: uppercase;
+        font-size: 14pt;
+        border-radius: 5px;
+      }
+      button:hover {
+        background-color: #ffefef;
+        color: #7c99ac;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+      }
+      .footer {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: smaller;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Japan 🎐</h1>
+    <h2>where ancient traditions are fused with modern life</h2>
+    <hr />
+    <img
+      src="https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1792&q=80"
+      alt="mount fuji"
+    />
+    <hr />
+    <p>
+      On the surface <span class="Japan"><strong>Japan</strong></span> appears
+      exceedingly modern, but travelling around it offers numerous opportunities
+      to connect with the country's traditional culture. Spend the night in a
+      ryokan <em>(traditional Japanese inn)</em>, sleeping on futons and tatami
+      mats, and padding through well-worn wooden halls to the bathhouse (or go
+      one step further and sleep in an old farmhouse). Meditate with monks or
+      learn how to whisk bitter matcha <em>(powdered green tea)</em> into a
+      froth. From the splendour of a Kyoto geisha dance to the spare beauty of a
+      Zen rock garden, Japan has the power to enthral even the most jaded
+      traveller.<br />
+      Wherever you are in Japan, it seems, you're never far from a great meal.
+      Restaurants often specialise in just one dish – perhaps having spent
+      generations perfecting it – and pay close attention to every stage, from
+      sourcing the freshest, local ingredients to assembling the dish
+      attractively. And as you'll quickly discover, Japanese cuisine has great
+      regional variations. The hearty hotpots of the mountains are, for example,
+      dramatically different from the delicate sushi for which the coast is
+      famous. It's also intensely seasonal, meaning you can visit at a different
+      time of year and experience totally new tastes.
+    </p>
+    <div class="learnMore">
+      <a href="https://www.lonelyplanet.com/japan"
+        >Learn more on Lonely Planet</a
+      ><br />
+    </div>
+    <button>Book your ticket</button>
+    <div class="footer">
+      This page is built by
+      <a href="https://www.linkedin.com/in/leunghoiyi/">Leung Hoi Yi</a>
+    </div>
+    <script>
+      function book() {
+        let name = prompt("What is your name?");
+        if (name.length === 0) {
+          alert("Sorry, please enter your name.");
+        } else {
+          let email = prompt("What is your email address?");
+          if (email.length === 0) {
+            alert("Sorry, please enter your email address.");
+          } else {
+            let city = prompt("Which city would you like to go?");
+            if (city.length === 0) {
+              alert(
+                "Sorry, please enter the name of the city that you want to go."
+              );
+            } else {
+              alert(
+                "Thank you, " +
+                  name +
+                  "! You will receive an email from us. See you in " +
+                  city +
+                  "!"
+              );
+            }
+          }
+        }
+      }
+
+      let bookButton = document.querySelector("button");
+      bookButton.addEventListener("click", book);
+    </script>
+  </body>
+</html>
